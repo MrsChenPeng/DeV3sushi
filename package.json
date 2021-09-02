@@ -1,8 +1,8 @@
 {
   "name": "sushiswap-interface",
   "version": "1.0.0",
-  "homepage": "https://MrsChenPeng.github.io/DeV3sushi",
   "private": true,
+   "homepage": "./",
   "scripts": {
     "analyze": "ANALYZE=true yarn build && serve .next -n",
     "dev": "next dev",
@@ -21,6 +21,7 @@
     "cypress:headless": "cypress run",
     "e2e": "start-server-and-test start http://localhost:3000 cypress",
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless",
+	"predeploy":"npm run build",
 	"deploy": "gh-pages -d build"
   },
   "lint-staged": {
